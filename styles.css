@@ -1,0 +1,63 @@
+body {
+    margin: 20px;
+    font-family: Verdana, 'Geneva', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    background-color:rgb(49, 45, 45);
+}
+
+.avatar {
+    width: 225px;
+    box-shadow: -5px 12px 5px 3px rgb(27, 25, 25);
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background: #9b9696;
+    color: #17151d;
+    animation-name : add-shadow;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; 
+}
+.border-blue {
+    border: 7px outset #d1d1d1;
+    border-radius: 5px;
+}
+
+.card:hover {
+    animation-direction: reverse;
+    animation-duration: 4s;
+}
+
+p, h3, h4 {
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(163, 163, 167), 0 0 0.2em rgb(141, 141, 141);
+}
+
+
+p:link, h3:link, h4:link a:link {
+    text-decoration: none;
+}
+
+p:visited, h3:visited, h4:visited{
+    text-decoration: none;
+}
+
+p:hover,h3:hover, h4:hover {
+    box-shadow: 4px 1px 10px 1px rgb(32, 32, 32); 
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@keyframes add-shadow{
+    0% {box-shadow: 0px 0px 0px 0px rgb(238, 235, 235);}
+    50% {box-shadow: 7px 10px 42.5px 12.5px rgb(238, 235, 235);}
+    100% {box-shadow: 14px 20px 85px 25px rgb(238, 235, 235);}
+}
+
